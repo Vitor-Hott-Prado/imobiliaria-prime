@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+export interface Imovel {
+  id: number;
+  titulo: string;
+}
 
 @Component({
   selector: 'app-card-imovel',
@@ -6,5 +11,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-imovel.component.scss']
 })
 export class CardImovelComponent {
-
+  @Input() imovel!: Imovel;
 }

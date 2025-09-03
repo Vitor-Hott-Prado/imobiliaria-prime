@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { FooterComponent } from './footer.component';
 
 describe('FooterComponent', () => {
@@ -17,5 +16,11 @@ describe('FooterComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render footer text', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('footer')?.textContent)
+      .toContain('Imobiliária Prime');
   });
 });

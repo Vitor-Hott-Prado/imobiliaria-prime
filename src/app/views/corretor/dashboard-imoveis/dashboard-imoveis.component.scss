@@ -1,0 +1,27 @@
+.dashboard-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+.card-imovel {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 220px;
+  min-width: 180px;
+}
+
+.card-imovel h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.card-imovel p {
+  margin: 0;
+  color: #555;
+}

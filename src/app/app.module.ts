@@ -10,6 +10,7 @@ import { DashboardImoveisComponent } from './views/corretor/dashboard-imoveis/da
 import { NavbarComponent } from './templates/components/navbar/navbar.component';
 import { CardImovelComponent } from './templates/components/card-imovel/card-imovel.component';
 import { FooterComponent } from './templates/components/footer/footer.component';
+import { PrimeiraLetraMaiusculaPipe } from './pipes/primeira-letra-maiuscula.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './templates/components/footer/footer.component'
     DashboardImoveisComponent,
     NavbarComponent,
     CardImovelComponent,
-    FooterComponent
+    FooterComponent,
+    PrimeiraLetraMaiusculaPipe
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,9 @@
-<p>home works!</p>
+
+</div><h1>Bem-vindo à Imobiliária Prime</h1>
+<p>Encontre o imóvel dos seus sonhos!</p>
+<div class="home-imoveis">
+  <div class="card-imovel" *ngFor="let imovel of imoveis">
+    <h3>{{ imovel.titulo }}</h3>
+    <p>ID: {{ imovel.id }}</p>
+  </div>
+
